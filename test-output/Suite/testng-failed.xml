@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="com.ust.FreshToHome.tests.LinkTest">
+        <methods>
+          <include name="productsLinkClickTest"/>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="placesLinkClickTest"/>
+        </methods>
+      </class> <!-- com.ust.FreshToHome.tests.LinkTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test5(failed)">
+    <classes>
+      <class name="com.ust.FreshToHome.tests.AccountDashBoardTest">
+        <methods>
+          <include name="valiidatingWhetherinAccountDashBoard"/>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="validateUserName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ust.FreshToHome.tests.AccountDashBoardTest -->
+    </classes>
+  </test> <!-- Test5(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="com.ust.FreshToHome.tests.SearchBoxTest">
+        <methods>
+          <include name="searchWithValueTest"/>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="searchWithWrongValueTest"/>
+          <include name="searchWithNullValueTest"/>
+          <include name="inputuserEntryTest"/>
+        </methods>
+      </class> <!-- com.ust.FreshToHome.tests.SearchBoxTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test4(failed)">
+    <classes>
+      <class name="com.ust.FreshToHome.tests.AccountLoginTest">
+        <methods>
+          <include name="enteringWrongtOtp"/>
+          <include name="loginWithRegisteredMobileNumberTest" invocation-numbers="0"/>
+          <include name="inputDataForRegistration" invocation-numbers="0 1 2 3"/>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="validateCurrentUrl"/>
+          <include name="enteringCorrectOtpTest"/>
+          <include name="navigateToOtpLogin"/>
+        </methods>
+      </class> <!-- com.ust.FreshToHome.tests.AccountLoginTest -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="com.ust.FreshToHome.tests.PincodeInputTest">
+        <methods>
+          <include name="inputPincodeTest"/>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="inputPincodesTest"/>
+        </methods>
+      </class> <!-- com.ust.FreshToHome.tests.PincodeInputTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

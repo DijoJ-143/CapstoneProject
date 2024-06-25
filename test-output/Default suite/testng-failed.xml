@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+<<<<<<< HEAD
+      <class name="com.ust.FreshToHome.runner.TestRunner4">
+=======
+      <class name="com.ust.FreshToHome.tests.PincodeInputTest">
+>>>>>>> cc174bb39b3e6f3656b5770c1d2eb3484f1cc3d9
+        <methods>
+          <include name="inputPincodeTest"/>
+          <include name="setUpDriver"/>
+          <include name="inputPincodesTest"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.ust.FreshToHome.runner.TestRunner4 -->
+=======
+      </class> <!-- com.ust.FreshToHome.tests.PincodeInputTest -->
+>>>>>>> cc174bb39b3e6f3656b5770c1d2eb3484f1cc3d9
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

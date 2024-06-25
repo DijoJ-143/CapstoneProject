@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.ust.FreshToHome.tests.PincodeInputTest" />
+			<class name="com.ust.FreshToHome.tests.SearchBoxTest" />
+			<class name="com.ust.FreshToHome.tests.LinkTest" />
+			<class name="com.ust.FreshToHome.tests.AccountLoginTest" />
+			<class name="com.ust.FreshToHome.tests.AccountDashBoardTest" />
+		
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

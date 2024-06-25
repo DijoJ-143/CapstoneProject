@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="Suite" parallel="tests" thread-count="10">
+  <test name="Test1">
+    <classes>
+      <class name="com.ust.FreshToHome.runner.TestRunner1"/>
+    </classes>
+  </test> 
+  <test name="Test2">
+    <classes>
+      <class name="com.ust.FreshToHome.runner.TestRunner2"/>
+    </classes>
+  </test>
+  <test name="Test3">
+    <classes>
+      <class name="com.ust.FreshToHome.runner.TestRunner3"/>
+    </classes>
+  </test>
+</suite>

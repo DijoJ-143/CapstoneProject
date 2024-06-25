@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.ust.FreshToHome.runner.TestRunner1"/>
+      <class name="com.ust.FreshToHome.runner.TestRunner2"/>
+      <class name="com.ust.FreshToHome.runner.TestRunner3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

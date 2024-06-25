@@ -1,0 +1,700 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/17/2</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 07 18:14:03 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18102 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.LinkTest.productsLinkClickTest()'><b>productsLinkClickTest</b><br>Test class: com.ust.FreshToHome.tests.LinkTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.passDriverToNextTest()&quot; because &quot;com.ust.FreshToHome.tests.LinkTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.LinkTest.productsLinkClickTest(LinkTest.java:18)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1230659354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1230659354'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.passDriverToNextTest()&quot; because &quot;com.ust.FreshToHome.tests.LinkTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.LinkTest.productsLinkClickTest(LinkTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.LinkTest@21be3395</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.SearchBoxTest.inputuserEntryTest()'><b>inputuserEntryTest</b><br>Test class: com.ust.FreshToHome.tests.SearchBoxTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.PincodeInput.isDropDownDisplayed()&quot; because &quot;com.ust.FreshToHome.tests.SearchBoxTest.input&quot; is null
+	at com.ust.FreshToHome.tests.SearchBoxTest.inputuserEntryTest(SearchBoxTest.java:43)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace194960415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace194960415'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.PincodeInput.isDropDownDisplayed()&quot; because &quot;com.ust.FreshToHome.tests.SearchBoxTest.input&quot; is null
+	at com.ust.FreshToHome.tests.SearchBoxTest.inputuserEntryTest(SearchBoxTest.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.SearchBoxTest@7d322cad</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration()'><b>inputDataForRegistration</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest<br>Parameters: [Ljava.lang.String;@51b1a8f6</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.datasForLogin(String, String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration(AccountLoginTest.java:71)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace782696069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace782696069'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.datasForLogin(String, String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration(AccountLoginTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountDashBoardTest.valiidatingWhetherinAccountDashBoard()'><b>valiidatingWhetherinAccountDashBoard</b><br>Test class: com.ust.FreshToHome.tests.AccountDashBoardTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.passDriverToNextTest()&quot; because &quot;com.ust.FreshToHome.tests.AccountDashBoardTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountDashBoardTest.valiidatingWhetherinAccountDashBoard(AccountDashBoardTest.java:19)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace407324739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace407324739'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.passDriverToNextTest()&quot; because &quot;com.ust.FreshToHome.tests.AccountDashBoardTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountDashBoardTest.valiidatingWhetherinAccountDashBoard(AccountDashBoardTest.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountDashBoardTest@4470fbd6</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountDashBoardTest.validateUserName()'><b>validateUserName</b><br>Test class: com.ust.FreshToHome.tests.AccountDashBoardTest<br>Parameters: dijo</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountDashboardPom.validateUserName(String)&quot; because &quot;com.ust.FreshToHome.tests.AccountDashBoardTest.adp&quot; is null
+	at com.ust.FreshToHome.tests.AccountDashBoardTest.validateUserName(AccountDashBoardTest.java:32)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace198438455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace198438455'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountDashboardPom.validateUserName(String)&quot; because &quot;com.ust.FreshToHome.tests.AccountDashBoardTest.adp&quot; is null
+	at com.ust.FreshToHome.tests.AccountDashBoardTest.validateUserName(AccountDashBoardTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountDashBoardTest@4470fbd6</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.SearchBoxTest.searchWithValueTest()'><b>searchWithValueTest</b><br>Test class: com.ust.FreshToHome.tests.SearchBoxTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.searchWithValue()&quot; because &quot;com.ust.FreshToHome.tests.SearchBoxTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.SearchBoxTest.searchWithValueTest(SearchBoxTest.java:72)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1889787493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1889787493'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.searchWithValue()&quot; because &quot;com.ust.FreshToHome.tests.SearchBoxTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.SearchBoxTest.searchWithValueTest(SearchBoxTest.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.SearchBoxTest@7d322cad</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.navigateToOtpLogin()'><b>navigateToOtpLogin</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.otpLogin()&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.navigateToOtpLogin(AccountLoginTest.java:77)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1400464670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1400464670'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.otpLogin()&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.navigateToOtpLogin(AccountLoginTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.PincodeInputTest.inputPincodesTest()'><b>inputPincodesTest</b><br>Test class: com.ust.FreshToHome.tests.PincodeInputTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method log(Status, Media) in the type ExtentTest is not applicable for the arguments (Status, ExtentTest)
+
+	at com.ust.FreshToHome.utilities.ExtentReportsListener.onTestSuccess(ExtentReportsListener.java:45)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace870753825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace870753825'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method log(Status, Media) in the type ExtentTest is not applicable for the arguments (Status, ExtentTest)
+
+	at com.ust.FreshToHome.utilities.ExtentReportsListener.onTestSuccess(ExtentReportsListener.java:45)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:112)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:263)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:751)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>4</td>
+<td>com.ust.FreshToHome.tests.PincodeInputTest@2f67a4d3</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration()'><b>inputDataForRegistration</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest<br>Parameters: [Ljava.lang.String;@2a389173</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.datasForLogin(String, String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration(AccountLoginTest.java:71)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace867904371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace867904371'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.datasForLogin(String, String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration(AccountLoginTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.loginWithRegisteredMobileNumberTest()'><b>loginWithRegisteredMobileNumberTest</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest<br>Parameters: 7428730594</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.loginWithRegisteredMobileNumber(String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.loginWithRegisteredMobileNumberTest(AccountLoginTest.java:40)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1750015228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1750015228'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.loginWithRegisteredMobileNumber(String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.loginWithRegisteredMobileNumberTest(AccountLoginTest.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.SearchBoxTest.searchWithWrongValueTest()'><b>searchWithWrongValueTest</b><br>Test class: com.ust.FreshToHome.tests.SearchBoxTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.searchWithWrongValue()&quot; because &quot;com.ust.FreshToHome.tests.SearchBoxTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.SearchBoxTest.searchWithWrongValueTest(SearchBoxTest.java:64)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1138694378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1138694378'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.searchWithWrongValue()&quot; because &quot;com.ust.FreshToHome.tests.SearchBoxTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.SearchBoxTest.searchWithWrongValueTest(SearchBoxTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.SearchBoxTest@7d322cad</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.PincodeInputTest.inputPincodeTest()'><b>inputPincodeTest</b><br>Test class: com.ust.FreshToHome.tests.PincodeInputTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method log(Status, Media) in the type ExtentTest is not applicable for the arguments (Status, ExtentTest)
+
+	at com.ust.FreshToHome.utilities.ExtentReportsListener.onTestSuccess(ExtentReportsListener.java:45)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1270774891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1270774891'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method log(Status, Media) in the type ExtentTest is not applicable for the arguments (Status, ExtentTest)
+
+	at com.ust.FreshToHome.utilities.ExtentReportsListener.onTestSuccess(ExtentReportsListener.java:45)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:112)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:263)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:751)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>8</td>
+<td>com.ust.FreshToHome.tests.PincodeInputTest@2f67a4d3</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.LinkTest.placesLinkClickTest()'><b>placesLinkClickTest</b><br>Test class: com.ust.FreshToHome.tests.LinkTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.passDriverToNextTest()&quot; because &quot;com.ust.FreshToHome.tests.LinkTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.LinkTest.placesLinkClickTest(LinkTest.java:29)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace946771673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace946771673'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.passDriverToNextTest()&quot; because &quot;com.ust.FreshToHome.tests.LinkTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.LinkTest.placesLinkClickTest(LinkTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.LinkTest@21be3395</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration()'><b>inputDataForRegistration</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest<br>Parameters: [Ljava.lang.String;@213860b8</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.datasForLogin(String, String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration(AccountLoginTest.java:71)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1484006531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1484006531'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.datasForLogin(String, String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration(AccountLoginTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration()'><b>inputDataForRegistration</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest<br>Parameters: [Ljava.lang.String;@4ba89729</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.datasForLogin(String, String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration(AccountLoginTest.java:71)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1499096451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1499096451'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.AccountLoginPom.datasForLogin(String, String)&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.ap&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.inputDataForRegistration(AccountLoginTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.validateCurrentUrl()'><b>validateCurrentUrl</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.LinksPage.passDriverToNextTest()&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.lp&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.validateCurrentUrl(AccountLoginTest.java:23)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace945437255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace945437255'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.LinksPage.passDriverToNextTest()&quot; because &quot;com.ust.FreshToHome.tests.AccountLoginTest.lp&quot; is null
+	at com.ust.FreshToHome.tests.AccountLoginTest.validateCurrentUrl(AccountLoginTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.SearchBoxTest.searchWithNullValueTest()'><b>searchWithNullValueTest</b><br>Test class: com.ust.FreshToHome.tests.SearchBoxTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.searchWithNullValue()&quot; because &quot;com.ust.FreshToHome.tests.SearchBoxTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.SearchBoxTest.searchWithNullValueTest(SearchBoxTest.java:55)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1676164886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1676164886'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.ust.FreshToHome.pom.searchBoxPom.searchWithNullValue()&quot; because &quot;com.ust.FreshToHome.tests.SearchBoxTest.sp&quot; is null
+	at com.ust.FreshToHome.tests.SearchBoxTest.searchWithNullValueTest(SearchBoxTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.SearchBoxTest@7d322cad</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.enteringCorrectOtpTest()'><b>enteringCorrectOtpTest</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest</td>
+<td><div><pre>java.lang.Throwable: Method com.ust.FreshToHome.tests.AccountLoginTest.enteringCorrectOtpTest() on instance com.ust.FreshToHome.tests.AccountLoginTest@448c8166 depends on not successfully finished methods 
+[com.ust.FreshToHome.tests.AccountLoginTest.enteringWrongtOtp() on instance com.ust.FreshToHome.tests.AccountLoginTest@448c8166]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace903119606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace903119606'><pre>java.lang.Throwable: Method com.ust.FreshToHome.tests.AccountLoginTest.enteringCorrectOtpTest() on instance com.ust.FreshToHome.tests.AccountLoginTest@448c8166 depends on not successfully finished methods 
+[com.ust.FreshToHome.tests.AccountLoginTest.enteringWrongtOtp() on instance com.ust.FreshToHome.tests.AccountLoginTest@448c8166]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+<tr>
+<td title='com.ust.FreshToHome.tests.AccountLoginTest.enteringWrongtOtp()'><b>enteringWrongtOtp</b><br>Test class: com.ust.FreshToHome.tests.AccountLoginTest</td>
+<td><div><pre>java.lang.Throwable: Method com.ust.FreshToHome.tests.AccountLoginTest.enteringWrongtOtp() on instance com.ust.FreshToHome.tests.AccountLoginTest@448c8166 depends on not successfully finished methods 
+[com.ust.FreshToHome.tests.AccountLoginTest.loginWithRegisteredMobileNumberTest() on instance com.ust.FreshToHome.tests.AccountLoginTest@448c8166]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1490696497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1490696497'><pre>java.lang.Throwable: Method com.ust.FreshToHome.tests.AccountLoginTest.enteringWrongtOtp() on instance com.ust.FreshToHome.tests.AccountLoginTest@448c8166 depends on not successfully finished methods 
+[com.ust.FreshToHome.tests.AccountLoginTest.loginWithRegisteredMobileNumberTest() on instance com.ust.FreshToHome.tests.AccountLoginTest@448c8166]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.ust.FreshToHome.tests.AccountLoginTest@448c8166</td></tr>
+</table><p>
+</body>
+</html>
